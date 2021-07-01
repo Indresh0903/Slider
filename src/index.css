@@ -1,0 +1,159 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family:sans-serif;
+}
+
+.header{
+  display:block;
+  position: sticky;
+  color: aliceblue;
+  background-color: rgba(112, 107, 107, 0.692);
+  padding:0.8%;
+  height: 3vh;
+  
+}
+
+/* LEFT PANEL */
+.left{  
+  display:flex;
+  flex-direction: column;
+  float: left;
+  width: 5%;  
+  height: 93.5vh;
+  background-color: rgb(216, 41, 10);
+    transition-property:width;
+    transition-duration: 0.8s;
+    transition-timing-function: ease;
+}
+.left.expanded{
+  width: 12%;
+}
+
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  -ms-flex-align: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+.menubtn{
+  background-color:transparent;
+  border-width:0px;
+  cursor: pointer;
+  color: aliceblue;
+  margin: 10px 0px 30px 5px;
+  
+}
+.link{
+  text-decoration: none;
+  color: black;
+}
+
+.navlink{
+  display: flex;
+  flex-direction: row;
+  -ms-flex-align: center;
+  justify-content: left;
+  margin: 10px 0px 20px 0px;
+  border-radius: 7px;
+  padding: 5px;
+  color: white; 
+}
+.navlink:hover{
+  background-color: rgba(228, 224, 217, 0.418);
+}
+.span-expand{
+  margin-left:10px;
+  padding: 4px;
+}
+.left-setting{
+  position: relative;
+}
+.nav-setting{
+  display: none;
+}
+.nav-setting.open{
+  display: block;
+  list-style: none;
+  position: absolute;
+  top:48px;
+  left:20px;
+}
+.nav-setting.open li{
+  font-size: small;
+  color: white;
+  cursor: pointer;
+  
+  display: flex;
+  flex-direction: row;
+  -ms-flex-align: center;
+  justify-content: left;
+  border-radius: 7px;
+  padding: 5px;
+  text-decoration: none;
+
+  color: white; 
+}
+.nav-setting.open li:hover{
+  background-color: rgba(228, 224, 217, 0.418);
+}
+
+/* MAIN SECTION */
+.main-wrap{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 82.5vh;
+  padding: 3%;
+}
+
+.main-flex{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-content: center;
+}
+.main-flex-content{
+  position: relative;
+}
+.mainbtn{
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100px;
+  background-color: transparent;
+  border-width: 1px;
+  margin-bottom: 30px;
+}
+.mainbtn:hover{
+  background-color: rgba(233, 225, 225, 0.945);
+}
+.extra-setting{ 
+  display: none;
+}
+.extra-setting.open{
+  display:flex;
+  flex-direction: column;
+  border: 1px solid black;
+  position: absolute;
+  top:37px;
+  width:98%;
+  list-style: none;
+}
+.extra-setting.open li{
+  margin:10px 0px 10px 0px;
+  cursor: pointer;
+  font-size: small;
+  text-align: center;
+}
+
+.foot{
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  
+} 
