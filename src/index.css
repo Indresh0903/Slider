@@ -5,36 +5,42 @@
 }
 
 .header{
-  display:block;
+  display:inline-block;
+  width: 100%;
   position: sticky;
   color: aliceblue;
   background-color: rgba(112, 107, 107, 0.692);
-  padding:0.8%;
-  height: 3vh;
+  padding:10px;
   
 }
 
 /* LEFT PANEL */
+
 .left{  
   display:flex;
   flex-direction: column;
+  
   float: left;
+  /* top:0;
+  left:0; */
   width: 5%;  
-  height: 93.5vh;
+  min-width: 70px;
+  height: 100vh;
   background-color: rgb(216, 41, 10);
-    transition-property:width;
+    transition-property:width,min-width;
     transition-duration: 0.8s;
     transition-timing-function: ease;
 }
 .left.expanded{
   width: 12%;
+  min-width: 160px;
 }
 
 .flex-container{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  -ms-flex-align: center;
+  
   justify-content: center;
   margin: 15px;
 }
@@ -45,7 +51,14 @@
   cursor: pointer;
   color: aliceblue;
   margin: 10px 0px 30px 5px;
+  width: 5%;
+  transition-property: margin;
+  transition-duration: 0.8s;
+    transition-timing-function: ease;
   
+}
+.menuopen{
+  margin: 10px 0px 30px 110px;
 }
 .link{
   text-decoration: none;
@@ -106,11 +119,43 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 82.5vh;
-  padding: 3%;
+  flex-wrap: wrap;
+  height: 100vh;
+  /* padding: 3%; */
+}
+.page-name{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  align-content: flex-start;
+  
+  text-align: center; 
+
+}
+.page-name div{
+  height: 46vh;
+  border:1px solid black;
+  flex-grow: 1;
+   min-width: 300px; 
+   padding: 100px;
+   box-sizing: border-box;
 }
 
-.main-flex{
+/* FOOTER */
+.foot{
+  position:absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  color: aliceblue;
+  background-color: rgba(112, 107, 107, 0.692);
+  padding:10px;
+} 
+
+
+
+
+/* .main-flex{
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -150,10 +195,8 @@
   font-size: small;
   text-align: center;
 }
+.extra-setting.open li:hover{
+  background-color:rgba(233, 225, 225, 0.945) ;
+} */
 
-.foot{
-  position:absolute;
-  left: 0;
-  bottom: 0;
-  
-} 
+

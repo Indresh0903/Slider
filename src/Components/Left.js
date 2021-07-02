@@ -22,7 +22,7 @@ function Left(){
         <div className={!expand?'left':'left expanded'} > 
            <nav className="flex-container">
 
-            <div className='menubtn'onClick={()=>{
+            <div className={expand?'menubtn menuopen':'menubtn'}onClick={()=>{
                 setExpand(prev=>{
                     return(!prev)
                 })

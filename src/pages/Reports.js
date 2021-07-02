@@ -4,7 +4,7 @@ import Footer from './Footer'
 export default function Reports() {
     return (
         <div className="main-wrap">
-            <MainHeader/>
+            {/* <MainHeader/> */}
             <div className="page-name">
                 <h4>REPORTS</h4>
             </div>
