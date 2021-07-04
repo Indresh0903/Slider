@@ -7,6 +7,7 @@ import Devices from './pages/Devices'
 import Reports from './pages/Reports'
 import Policies from './pages/Policies'
 import Network from './pages/Network'
+import Email from './pages/Email'
 import Left from './Components/Left';
 import {BrowserRouter as Router,Switch, Route} from "react-router-dom"
 function App() {
@@ -22,7 +23,9 @@ function App() {
         <Route path="/Reports" component={Reports}/>
         <Route path="/Settings/Policies" component={Policies}/>
         <Route path="/Settings/Network" component={Network}/>
-      </Switch>
+        <Route path="/Email" component={Email}/>
+        <Route path="/" component={Home}/>    {/*for random urls*/}
+      </Switch> 
       </Router>
     </div>
   );
