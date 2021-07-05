@@ -2,7 +2,7 @@ import React from 'react'
 import MainHeader from './MainHeader'
 import Footer from './Footer'
 import Select from 'react-dropdown-select'
-import { Options } from './Options';
+import { Options } from '../Data/Options';
 export default function Email() {
     const setValues=(e)=>{ 
         console.log(e)
@@ -15,7 +15,7 @@ export default function Email() {
                 <label>{option.field}</label>
             <Select className="package" options={option.option} onChange={(e) => setValues(e)}
              placeholder={"Select"} clearable={true} closeOnSelect={false}
-            labelField={'name'} searchBy={"name"} clearOnSelect={false} style={{color:"#4a4848",background:"#ecedeb",textAlign:"center"}} color={"#bfbfbf"}  required={true}
+            labelField={'name'} searchBy={"name"} clearOnSelect={false} style={{color:"#4a4848",background:"#ecedeb"}} color={"#bfbfbf"}  required={true}
             />
             </div>
         )
