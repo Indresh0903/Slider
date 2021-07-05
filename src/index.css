@@ -145,7 +145,6 @@
 .selectors{
   display: flex;
   flex-wrap: wrap;
-  margin:0px 2% 0px 2%;
   width: 30%;
   /* border:1px solid black; */
   justify-content:space-between;
@@ -155,7 +154,18 @@
   box-sizing: border-box;
 
 }
-
+.form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow:auto;
+  margin:0px 2% 0px 2%;
+}
+.email-submit{
+  width: 5%;
+  min-width: 80px;
+  margin: 10px;
+}
 @media (max-width: 1200px) {
   .selectors {
    display: flex;
